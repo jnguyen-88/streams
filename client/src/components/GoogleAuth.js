@@ -21,21 +21,24 @@ class GoogleAuth extends React.Component {
     // Helper function to automatically display if you're signIn/signOut 
     onAuthChange = (isSignedIn) => {
         if(isSignedIn) {
+            // need ID to ref. which user created a new stream
             this.props.signIn(this.auth.currentUser.get().getId())
         } else {
             this.props.signOut()
         }
     }
 
+    // sign in by pressing button
     onSignInClick = () => {
         this.auth.signIn();
     }
 
+    // sign out by pressing button
     onSignOutClick = () => {
         this.auth.signOut();
     }
 
-    // Logic to check whether user is signed in/out
+    // Logic to check to allow user to sign in/out
     renderAuthButton(){
         if(this.props.isSignedIn === null){
             return null
