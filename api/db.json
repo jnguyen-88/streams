@@ -1,9 +1,22 @@
 {
   "streams": [
     {
-      "title": "My Streams",
-      "description": "streamy",
+      "title": "Justin",
+      "description": "Nguyen",
+      "userId": "105806258841807647171",
       "id": 1
+    },
+    {
+      "title": "Another Stream",
+      "description": "Stream #2",
+      "userId": "105806258841807647171",
+      "id": 2
+    },
+    {
+      "title": "Another Stream 3",
+      "description": "Another one",
+      "userId": "105806258841807647171",
+      "id": 3
     }
   ]
 }
